@@ -1,0 +1,36 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	background: url('../img/promo/background.jpg') no-repeat center/cover;
+	padding-top: 250px;
+	&__subtitle {
+		position: relative;
+		padding-left: 11px;
+		z-index: 2;
+		@include circle;
+	}
+	.title {
+		width: 535px;
+		color: #fff;
+	}
+
+	.title_fz48 {
+		margin-top: 10px;
+	}
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+		width: 250px;
+		margin-top: 25px;
+		align-items: center;
+	}
+	&__link {
+		font-size: 14px;
+		line-height: 21px;
+		color: #fff;
+		font-weight: bold;
+		:hover {
+			text-decoration: none;
+		}
+	}
+}
