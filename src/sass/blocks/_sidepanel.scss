@@ -24,4 +24,14 @@
 		height: 70px;
 		background-color: #fff;
 	}
+	&__link {
+		transition: 0.5s all;
+		&:hover {
+			transform: rotate(90deg);
+			svg path {
+				fill: $main-color;
+				transition: 0.5s all;
+			}
+		}
+	}
 }

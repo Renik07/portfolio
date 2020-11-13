@@ -1,8 +1,15 @@
 .promo {
 	min-height: 100vh;
+	width: 100%;
 	position: relative;
-	background: url('../img/promo/background.jpg') no-repeat center/cover;
 	padding-top: 250px;
+	background:
+	url('../img/promo/parallax-4.png'),
+	url('../img/promo/parallax-3.png'),
+	url('../img/promo/parallax-2.png'),
+	url('../img/promo/parallax-1.jpg');		
+	background-repeat: no-repeat;
+  background-position: 50% 50%;
 	&__subtitle {
 		position: relative;
 		padding-left: 11px;
@@ -15,6 +22,7 @@
 	}
 
 	.title_fz48 {
+		position: relative;
 		margin-top: 10px;
 	}
 	&__btns {
@@ -23,13 +31,15 @@
 		width: 250px;
 		margin-top: 25px;
 		align-items: center;
+		position: relative;
 	}
 	&__link {
 		font-size: 14px;
 		line-height: 21px;
 		color: #fff;
 		font-weight: bold;
-		:hover {
+		position: relative;
+		&:hover {
 			text-decoration: none;
 		}
 	}
