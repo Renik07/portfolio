@@ -21,7 +21,7 @@
 	}
 	&:after {
 		transform: translateX(-120%) skewX(-20deg);
-		background-color: #FFBB41;
+		background-color: $main-color;
 	}
 	&:hover {
 		color: #000;
