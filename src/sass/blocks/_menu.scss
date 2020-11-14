@@ -8,6 +8,11 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	cursor: pointer;
+	&:hover {
+		span {
+			align-self: start;
+		}
+	}
 	span {
 		display: block;
 		width: 30px;
@@ -85,7 +90,8 @@
 		}
 		&:hover {
 			&:before {
-				background-color: #fff;
+				background-color: #FF6A01;
+				border-color: #FF6A01;
 			}
 		}
 	}

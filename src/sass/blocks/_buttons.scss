@@ -4,4 +4,37 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	padding: 12px 25px;
 	color: #000;
+	position: relative;
+	overflow: hidden;
+	border-radius: 3px;
+	&:before, 
+	&:after {
+		transition: all .6s ease-in-out;
+		content: "";
+		position: absolute;
+		width: 120%;
+		height: 100%;
+		top: 0;
+		left: -15px;
+		transform: translateX(-110%) skewX(-20deg);
+		background-color: rgba(255, 255, 255, 0.637);
+	}
+	&:after {
+		transform: translateX(-120%) skewX(-20deg);
+		background-color: #FFBB41;
+	}
+	&:hover {
+		color: #000;
+		&:before {
+			transform: translateX(10%) skewX(-20deg);
+		}
+		&:after {
+			left: -30px;
+			transform: translateX(10%) skewX(-20deg);
+		}
+	}
+	span {
+		position: relative;
+		z-index: 5;
+	}
 }
