@@ -8,7 +8,7 @@
 	url('../img/promo/parallax-4.png') 50% 50% no-repeat,
 	url('../img/promo/parallax-3.png') 50% 50% no-repeat,
 	url('../img/promo/parallax-2.png') 50% 50% no-repeat,		
-	url('../img/promo/parallax-1.jpg') 50% 50% no-repeat;		
+	url('../img/promo/parallax-1.jpg') 50% 50%/cover no-repeat;		
 	&__subtitle {
 		position: relative;
 		padding-left: 11px;
@@ -17,7 +17,7 @@
 	}
 	.title {
 		width: 535px;
-		color: #fff;
+		color: #000;
 	}
 
 	.title_fz48 {
@@ -35,12 +35,11 @@
 	&__link {
 		font-size: 14px;
 		line-height: 21px;
-		color: #fff;
+		color: #000;
 		font-weight: bold;
 		position: relative;
 		&:hover {
 			color: #000;
-			text-decoration: none;
 		}
 	}
 }
