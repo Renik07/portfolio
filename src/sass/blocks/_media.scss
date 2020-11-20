@@ -12,13 +12,40 @@
 	}
 	.skills {
 		&__wrapper {
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(auto-fit, 270px);
+			justify-content: space-around;
 		}
 		&__progress {
 			grid-template: repeat(2,70px)/repeat(3,minmax(290px, auto));
 			&-line {
 				max-width: 290px;
 			}
+		}
+	}
+	.portfolio {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 280px);
+			grid-auto-rows: 280px;
+			justify-content: space-around;
+			row-gap: 35px;
+			.horizontal,
+			.vertical {
+				grid-row: unset;
+    		grid-column: unset;
+			}	
+		}
+	}
+	.contacts {
+		&__wrapper {
+			grid-template-columns: 400px 450px;
+		}
+		&__form {
+			grid-template: 45px 190px 45px/205px 205px;
+		}
+		&__btn {
+			font-size: 15px;
+			padding: 0px 25px;
+			text-align: center;
 		}
 	}
 }
@@ -64,14 +91,45 @@
 		}
 	}
 	.skills {
-		&__wrapper {
-			grid-template-columns: repeat(2,1fr);
-		}
 		&__progress {
 			grid-template: repeat(2,70px)/repeat(2,minmax(290px,auto));
 			&-line {
 				max-width: 337.5px;
 			}
+		}
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 350px);
+			padding: 0;
+			margin: 60px 0px 0px;
+		}
+	}
+	.contacts {
+		&__wrapper {
+			grid-template-columns: 1fr;
+			padding: 0 32px;
+		}
+		&__title {
+			text-align: center;
+			padding: 0;
+			&:before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		&__subtitle {
+			text-align: center;
+		}
+		.divider {
+			display: block;
+			margin: 0 auto;
+		}
+		&__photo {
+			display: none;
+		}
+		&__form {
+			grid-template: 45px 190px 45px/315px 315px;
 		}
 	}
 }
@@ -110,6 +168,9 @@
 		}
 	}
 	.skills {
+		&__wrapper {
+			grid-template-columns: repeat(2,1fr);
+		}
 		padding-top: 40px;
 		&__progress {
 			grid-template: repeat(2,70px)/repeat(2,minmax(255px,auto));
@@ -117,6 +178,36 @@
 			&-line {
 				max-width: 255px;
 			}
+		}
+	}
+	.portfolio {
+		&__wrapper {
+			margin-top: 30px;
+		}
+	}
+	.price {
+		&__wrapper {
+			margin-top: 30px;
+			justify-content: center;
+		}
+	}
+	.contacts {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&__title {
+			width: 76px;
+			display: block;
+			margin: 0 auto;
+		}
+		&__subtitle {
+			text-align: center;
+		}
+		.divider {
+			display: block;
+			margin: 0 auto;
+		}
+		&__form {
+			grid-template: 45px 190px 45px/230px 230px;
 		}
 	}
 }
@@ -141,6 +232,9 @@
 				font-size: 26px;
 				line-height: 39px;
 			}
+		}
+		&__btns {
+			margin-top: 115px;
 		}
 	}
 	.menu {
@@ -172,9 +266,43 @@
 		}
 		&__progress {
 			grid-template: repeat(2,70px)/repeat(1,minmax(255px,auto));
+			margin-top: 40px;
 			&-line {
 				max-width: 555px;
 			}
+		}
+	}
+	.portfolio {
+		padding-top: 40px;
+		&__wrapper {
+			margin-top: 30px;
+		}
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 300px);
+		}
+	}
+	.contacts {
+		&__wrapper {
+			padding: 0;
+		}
+		&__block {
+			text-align: center;
+		}
+		&__triggers {
+			grid-column: unset;
+			grid-template-columns: 1fr;
+		}
+		&__form {
+			grid-template: 45px 45px 145px 100px / 230px;
+			justify-content: center;
+		}
+		&__textarea {
+			grid-column: unset;
+		}
+		&__subtitle {
+			font-size: 24px;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 .price {
-	margin-top: 66px;
+	padding-top: 66px;
 	.divider {
 		margin: 0 auto;
 		margin-top: 25px;
@@ -8,6 +8,7 @@
 		margin: 60px 50px 0px;
 		display: grid;
 		grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 370px);
+		grid-auto-rows: minmax(45px, auto);
 		justify-content: space-between;
 		row-gap: 15px;
 	}
